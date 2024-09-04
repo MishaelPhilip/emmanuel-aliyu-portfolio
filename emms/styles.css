@@ -1,0 +1,150 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+   color: white;
+   text-align: center;
+}
+header{
+   display: flex;
+   background-color: black;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 15px;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   z-index: 100;
+}
+ul{
+   display: flex;
+   width: 70%;
+   align-items: center;
+}
+ul li{
+   list-style: none;
+   padding: 12px;
+   transition: all 0.3s ease-in-out;
+}
+ul li a{
+   text-decoration: none;
+   color: white;
+}
+ul li:hover{
+   background-color: blue;
+}
+ul li a:hover{
+   background-color: blue;
+}
+#about{
+   background-color: grey;
+   width: 100%;
+   height: 80vh;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+
+#about div h1{
+   color: blue;
+   font-size: 3rem;
+}
+#about div h4{
+   color: rgb(143, 3, 3);
+   font-size: 2rem;
+}
+#project{
+   background-color: rgb(38, 1, 78);
+   padding: 50px 0;
+}
+#project h1{
+   margin-bottom: 40px;
+   font-size: 2.5rem;
+}
+.my-proj{
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+.proj{
+   width: 32.3%;
+   margin-left: 5px;
+   margin-bottom: 10px;
+   background-color: red;
+   padding: 5px;
+}
+.proj img{
+   width: 100%;
+}
+.proj:hover{
+   opacity: 0.7;
+}
+#contact{
+   background-color: grey;
+   padding: 50px;
+}
+#contact h1{
+   color: rgb(32, 26, 26);
+   font-size: 2.5rem;
+}
+.line{
+   width: 100%;
+   height: 1px;
+   background-color: black;
+   margin-bottom: 40px;
+}
+.form-group{
+   text-align: left;
+}
+.form-entry{
+   width: 30%;
+   margin: 50px 0;
+}
+@media(max-width: 600px){
+   .form-entry{
+      width: 100%;
+      margin: 50px 0;
+   }
+}
+label{
+   color: black;
+   font-weight: bold;
+   margin-right: 30px;
+}
+input{
+   width: 100%;
+   padding: 8px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+}
+textarea{
+   width: 400px;
+ 
+}
+input[type="submit"]{
+   background-color: rgb(39, 14, 14);
+   color: white;
+   font-size: 15px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.4s ease-in-out;
+   width: 100%;
+}
+input[type="submit"]:hover{
+   opacity: 0.7;
+}
+footer{
+   background-color: black;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 40px;
+   display: flex;
+}
+footer a{
+   color: white;
+}
